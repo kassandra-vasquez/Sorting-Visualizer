@@ -9,7 +9,7 @@ Clone repository
     git clone https://github.com/yourusername/sorting-visualizer
 
 Navigate to the Project Directory
-	cd sorting-visualizer
+    cd sorting-visualizer
 
 Run 'main.py' from root
     python main.py
