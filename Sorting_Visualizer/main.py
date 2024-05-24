@@ -3,6 +3,7 @@ from tkinter import ttk
 import random
 from colors import *
 
+
 # making a basic window
 window = Tk()
 window.title("Sorting Algorithms Visualization")
@@ -49,7 +50,12 @@ def generate():
 
 # function will set sorting speed
 def set_speed():
-    pass
+    if speed_menu.get() == "Slow":
+        return 0.3
+    elif speed_menu.get() == "Medium":
+        return 0.1
+    else:
+        return 0.001
 
 # function triggers selected algorithm and starts sorting
 def sort():
