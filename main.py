@@ -73,7 +73,7 @@ def sort():
     elif algo_menu.get() == "Selection Sort":
         selection_sort(data, drawData, timeTick)
     elif algo_menu.get() == "Quick Sort":
-        quick_sort(data, drawData, timeTick)
+        quick_sort(data, 0, len(data)-1, drawData, timeTick)
 
 ## UI HERE ##
 UI_frame = Frame(window, width=900, height=300, bg=WHITE)

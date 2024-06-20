@@ -8,7 +8,7 @@ def partition(data, start, end, drawData, timeTick):
     for j in range(start+1, end+1):
         if data[j] < pivot:
             data[i], data[j] = data[j], data[i]
-            i += 1
+            i+=1
     data[start], data[i-1] = data[i-1], data[start]
     return i-1
 
@@ -18,8 +18,8 @@ def quick_sort(data, start, end, drawData, timeTick):
         quick_sort(data, start, pivot_position-1, drawData, timeTick)
         quick_sort(data, pivot_position+1, end, drawData, timeTick)
 
-        drawData(data, [PURPLE if x >= start and x < pivot_position else YELLOW if x == pivot_position else BLUE if x > pivot_position and x <= end else LIGHT_BLUE for x in range(len(data))])
-
+        drawData(data, [PURPLE if x >= start and x < pivot_position else YELLOW if x == pivot_position
+                        else BLUE if x > pivot_position and x <= end else LIGHT_BLUE for x in range(len(data))])
         time.sleep(timeTick)
 
-    drawData(data, [BLUE for x in range(len(data))])
+    drawData(data, [LIGHT_BLUE for x in range(len(data))])

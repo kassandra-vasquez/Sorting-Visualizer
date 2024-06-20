@@ -18,6 +18,8 @@ Run 'main.py' from root
 ## Implemented Algorithms:
 * Bubble Sort
 * Merge Sort
+* Selection Sort
+* Quick Sort
 
 ## Technologies Used:
 * Python3
